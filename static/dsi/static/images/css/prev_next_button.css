@@ -1,0 +1,22 @@
+.button_prev {
+	width  : 24px;
+	height : 24px;
+	background-image : url(../images/prev_button.gif);
+    left : 136px;
+	top : 166px;
+}
+.button_next {
+	width  : 24px;
+	height : 24px;
+	background-image : url(../images/next_button.gif);
+	left : 230px;
+	top : 166px;
+}
+
+.page_number_box {
+    position: absolute;
+	left   : 160px;
+	top    : 166px;
+	width  : 70px;
+	height : 24px;
+}

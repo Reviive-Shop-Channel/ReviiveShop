@@ -1,0 +1,53 @@
+  <div id="tophelpshadow"><img src="/oss/oss/common/images//banner/top_help_shadow01.gif" width="132" height="75" /></div>
+  <div id="help">
+    <img src="/oss/oss/common/images//banner/help_a.gif" name="ManualImage"
+     width="52" height="55" border="0" id="ManualImageID"  onmouseout="MM_swapImgRestore()" 
+     onmouseover="MM_swapImage('ManualImage','','/oss/oss/common/images//banner/help_b.gif',1); wiiFocusSound();"
+     onclick="showHelp(); wiiSelectSound();"/>
+    <img src="/oss/oss/common/images//banner/help_gray.gif" 
+     width="52" height="55" border="0" id="ManualGrayImageID" style="display:none" />
+    <img src="/oss/oss/common/images//spacer.gif" name="HelpSpacer" width="52" height="55" border="0"
+     id='HelpSpacer' style="position:absolute; top:0px; left:0px; display:none"/>
+  </div>
+
+  <div id="top">
+    <img src="/oss/oss/common/images//banner/top_a.gif" name="TopImage" 
+     width="52" height="55" border="0" id="TopImageID" onmouseout="MM_swapImgRestore()" 
+     onmouseover="MM_swapImage('TopImage','','/oss/oss/common/images//banner/top_b.gif',1); wiiFocusSound();"
+     onclick="showHome(); wiiCancelSound();"/>
+    <img src="/oss/oss/common/images//banner/top_gray.gif" 
+     width="52" height="55" border="0" id="TopGrayImageID" style="display:none" />
+    <img src="/oss/oss/common/images//spacer.gif" name="MainSpacer" width="52" height="55" border="0"
+     id='MainSpacer' style="position:absolute; top:0px; left:0px; display:none"/>
+  </div>
+
+
+
+REPLACE:
+
+    <div id="tophelpshadow"><img src="/static/images//banner/top_help_shadow01.gif" width="132" height="75" /></div>
+  <div id="help">
+	<a href="/shopguide">
+		<img src="/static/images//banner/help_a.gif" name="TopImage" 
+		 width="52" height="55" border="0" id="ManualImageID" onmouseout="MM_swapImgRestore()" 
+		 onmouseover="MM_swapImage('TopImage','','/static/images//banner/help_b.gif',1); wiiFocusSound();"
+		 onclick="wiiCancelSound();"/>
+		<img src="/static/images//banner/help_b.gif" 
+		 width="52" height="55" border="0" id="ManualImageID" style="display:none" />
+		<img src="/static/images//spacer.gif" name="MainSpacer" width="52" height="55" border="0"
+		 id='MainSpacer' style="position:absolute; top:0px; left:0px; display:none"/>
+		</a>
+  </div>
+
+  <div id="top">
+	<a href="/homepage">
+    <img src="/static/images//banner/top_a.gif" name="TopImage" 
+     width="52" height="55" border="0" id="TopImageID" onmouseout="MM_swapImgRestore()" 
+     onmouseover="MM_swapImage('TopImage','','/static/images//banner/top_b.gif',1); wiiFocusSound();"
+     onclick="wiiCancelSound();"/>
+    <img src="/static/images//banner/top_gray.gif" 
+     width="52" height="55" border="0" id="TopGrayImageID" style="display:none" />
+    <img src="/static/images//spacer.gif" name="MainSpacer" width="52" height="55" border="0"
+     id='MainSpacer' style="position:absolute; top:0px; left:0px; display:none"/>
+	</a>
+  </div>

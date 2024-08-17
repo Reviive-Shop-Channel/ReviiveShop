@@ -1,0 +1,1526 @@
+THE OLD CODE THAT IS NEEDED TO BE REPLACED:
+
+
+function initRecommendedTitles()
+{
+  var recList = new Array();
+  var title;
+
+  return recList;
+}
+
+function inittitlelist1()
+{
+  var recList = new Array();
+  var title;
+
+  return recList;
+}
+function inittitlelist2()
+{
+  var recList = new Array();
+  var title;
+
+  return recList;
+}
+function inittitlelist3()
+{
+  var recList = new Array();
+  var title;
+
+  return recList;
+}
+function inittitlelist4()
+{
+  var recList = new Array();
+  var title;
+
+  return recList;
+}
+
+
+
+REPLACE IT WITH:
+
+
+function initRecommendedTitles()
+{
+  var recList = new Array();
+  var title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000148435745';
+
+      title.nameFirstLine = 'Amazon Instant Video';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000148435745/FFFD0000';
+      MM_preloadImages('/static/Titles/0001000148435745/FFFD0000');
+    
+      title.isNew = 'true';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[1] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000148435145';
+
+      title.nameFirstLine = 'Hulu Plus';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000148435145/FFFD000F';
+      MM_preloadImages('/static/Titles/0001000148435145/FFFD000F');
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[2] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000148434C45';
+
+      title.nameFirstLine = 'Netflix';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000148434C45/FFFD0004';
+      MM_preloadImages('/static/Titles/0001000148434C45/FFFD0004');
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[3] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014E414C45';
+
+      title.nameFirstLine = 'Super Smash Bros.';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014E414C45/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014E414C45/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '1000';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[4] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014E414245';
+
+      title.nameFirstLine = 'Mario Kart 64';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014E414245/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014E414245/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '1000';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[5] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157505345';
+
+      title.nameFirstLine = 'Pokémon Rumble';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157505345/FFFD0001';
+      MM_preloadImages('/static/Titles/0001000157505345/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '1500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[6] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000146414745';
+
+      title.nameFirstLine = 'Super Mario Bros.';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000146414745/FFFD0004';
+      MM_preloadImages('/static/Titles/0001000146414745/FFFD0004');
+    
+      title.isNew = 'false';
+      title.price = '500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[7] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000146413945';
+
+      title.nameFirstLine = 'Zelda II - ';
+      title.nameSecondLine = 'The Adventure of Link';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000146413945/FFFD0000';
+      MM_preloadImages('/static/Titles/0001000146413945/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[8] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014D424D45';
+
+      title.nameFirstLine = 'Sonic The Hedgehog 3';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014D424D45/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014D424D45/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '800';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[9] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157545045';
+
+      title.nameFirstLine = 'Tetris Party';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157545045/FFFD0001';
+      MM_preloadImages('/static/Titles/0001000157545045/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '1200';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[10] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014A435745';
+
+      title.nameFirstLine = 'Super Mario Kart';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014A435745/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014A435745/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '800';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[11] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157525545';
+
+      title.nameFirstLine = 'BIT.TRIP RUNNER';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157525545/FFFD0001';
+      MM_preloadImages('/static/Titles/0001000157525545/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '800';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[12] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014A414545';
+
+      title.nameFirstLine = 'Donkey Kong Country';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014A414545/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014A414545/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '800';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[13] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000146424345';
+
+      title.nameFirstLine = 'Excitebike';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000146424345/FFFD0000';
+      MM_preloadImages('/static/Titles/0001000146424345/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[14] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157464745';
+
+      title.nameFirstLine = 'Frogger Returns';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157464745/FFFD0001';
+      MM_preloadImages('/static/Titles/0001000157464745/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[15] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014E414445';
+
+      title.nameFirstLine = 'Star Fox 64';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014E414445/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014E414445/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '1000';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[16] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157464345';
+
+      title.nameFirstLine = 'FFCC:';
+      title.nameSecondLine = 'My Life as a King';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157464345/FFFD0001';
+      MM_preloadImages('/static/Titles/0001000157464345/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '1500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[17] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000146435745';
+
+      title.nameFirstLine = 'Super Mario Bros. 3';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000146435745/FFFD0004';
+      MM_preloadImages('/static/Titles/0001000146435745/FFFD0004');
+    
+      title.isNew = 'false';
+      title.price = '500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[18] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000146424945';
+
+      title.nameFirstLine = 'Punch-Out!!';
+      title.nameSecondLine = 'Featuring Mr. Dream';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000146424945/FFFD0000';
+      MM_preloadImages('/static/Titles/0001000146424945/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[19] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014D414545';
+
+      title.nameFirstLine = 'Golden Axe';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014D414545/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014D414545/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '800';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[20] = title;
+  
+  return recList;
+}
+
+function inittitlelist1()
+{
+  var recList = new Array();
+  var title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157505345';
+
+      title.nameFirstLine = 'Pokémon Rumble';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157505345/FFFD0001';
+      MM_preloadImages('/static/Titles/0001000157505345/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '1500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[1] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157424D45';
+
+      title.nameFirstLine = 'My Pokémon Ranch';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157424D45/FFFD0000';
+      MM_preloadImages('/static/Titles/0001000157424D45/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '1000';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[2] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014E414B45';
+
+      title.nameFirstLine = 'Pokémon Snap';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014E414B45/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014E414B45/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '1000';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[3] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014E414E45';
+
+      title.nameFirstLine = 'Pokémon Puzzle';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014E414E45/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014E414E45/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '1000';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[4] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000158484145';
+
+      title.nameFirstLine = 'Pokémon Rumble';
+      title.nameSecondLine = 'Demo';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000158484145/FFFD0001';
+      MM_preloadImages('/static/Titles/0001000158484145/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[5] = title;
+  
+  return recList;
+}
+function inittitlelist2()
+{
+  var recList = new Array();
+  var title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014E414245';
+
+      title.nameFirstLine = 'Mario Kart 64';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014E414245/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014E414245/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '1000';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[1] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000146435745';
+
+      title.nameFirstLine = 'Super Mario Bros. 3';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000146435745/FFFD0004';
+      MM_preloadImages('/static/Titles/0001000146435745/FFFD0004');
+    
+      title.isNew = 'false';
+      title.price = '500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[2] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000146414D45';
+
+      title.nameFirstLine = 'Wario&#39;s Woods';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000146414D45/FFFD0004';
+      MM_preloadImages('/static/Titles/0001000146414D45/FFFD0004');
+    
+      title.isNew = 'false';
+      title.price = '500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[3] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014D414845';
+
+      title.nameFirstLine = 'Sonic The Hedgehog';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014D414845/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014D414845/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '800';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[4] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014A414D45';
+
+      title.nameFirstLine = 'Gradius III';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014A414D45/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014A414D45/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '800';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[5] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014645444E';
+
+      title.nameFirstLine = 'DIG DUG';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014645444E/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014645444E/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '600';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[6] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014D414245';
+
+      title.nameFirstLine = 'Columns';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014D414245/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014D414245/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '800';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[7] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014A444945';
+
+      title.nameFirstLine = 'Super Star Wars';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014A444945/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014A444945/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '800';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[8] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000146414745';
+
+      title.nameFirstLine = 'Super Mario Bros.';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000146414745/FFFD0004';
+      MM_preloadImages('/static/Titles/0001000146414745/FFFD0004');
+    
+      title.isNew = 'false';
+      title.price = '500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[9] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014E415545';
+
+      title.nameFirstLine = 'Mario Golf';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014E415545/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014E415545/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '1000';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[10] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000150414345';
+
+      title.nameFirstLine = 'Dungeon Explorer';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000150414345/FFFD0004';
+      MM_preloadImages('/static/Titles/0001000150414345/FFFD0004');
+    
+      title.isNew = 'false';
+      title.price = '600';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[11] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014A434345';
+
+      title.nameFirstLine = 'Kirby Super Star';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014A434345/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014A434345/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '800';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[12] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014D423645';
+
+      title.nameFirstLine = 'Shining Force II';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014D423645/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014D423645/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '800';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[13] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014C414D45';
+
+      title.nameFirstLine = 'Sonic Chaos';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014C414D45/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014C414D45/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[14] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014E414F45';
+
+      title.nameFirstLine = '1080° SNOWBOARDING';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014E414F45/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014E414F45/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '1000';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[15] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000146415245';
+
+      title.nameFirstLine = 'Gradius';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000146415245/FFFD0000';
+      MM_preloadImages('/static/Titles/0001000146415245/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[16] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '000100014A434B45';
+
+      title.nameFirstLine = 'SPACE INVADERS:';
+      title.nameSecondLine = 'The Original Game';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/000100014A434B45/FFFD0000';
+      MM_preloadImages('/static/Titles/000100014A434B45/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '800';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[17] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000146464D45';
+
+      title.nameFirstLine = 'Blaster Master';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000146464D45/FFFD0000';
+      MM_preloadImages('/static/Titles/0001000146464D45/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[18] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000146425545';
+
+      title.nameFirstLine = 'ADVENTURES OF LOLO';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000146425545/FFFD0000';
+      MM_preloadImages('/static/Titles/0001000146425545/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[19] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000146435145';
+
+      title.nameFirstLine = 'Ninja Gaiden II';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000146435145/FFFD0000';
+      MM_preloadImages('/static/Titles/0001000146435145/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[20] = title;
+  
+  return recList;
+}
+function inittitlelist3()
+{
+  var recList = new Array();
+  var title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157505345';
+
+      title.nameFirstLine = 'Pokémon Rumble';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157505345/FFFD0001';
+      MM_preloadImages('/static/Titles/0001000157505345/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '1500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[1] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157474F45';
+
+      title.nameFirstLine = 'World of Goo';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157474F45/FFFD0001';
+      MM_preloadImages('/static/Titles/0001000157474F45/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '1500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[2] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157545045';
+
+      title.nameFirstLine = 'Tetris Party';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157545045/FFFD0001';
+      MM_preloadImages('/static/Titles/0001000157545045/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '1200';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[3] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157444D45';
+
+      title.nameFirstLine = 'Dr. Mario Online Rx';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157444D45/FFFD0000';
+      MM_preloadImages('/static/Titles/0001000157444D45/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '1000';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[4] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157424D45';
+
+      title.nameFirstLine = 'My Pokémon Ranch';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157424D45/FFFD0000';
+      MM_preloadImages('/static/Titles/0001000157424D45/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '1000';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[5] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157464345';
+
+      title.nameFirstLine = 'FFCC:';
+      title.nameSecondLine = 'My Life as a King';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157464345/FFFD0001';
+      MM_preloadImages('/static/Titles/0001000157464345/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '1500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[6] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157523945';
+
+      title.nameFirstLine = 'Mega Man 9';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157523945/FFFD0001';
+      MM_preloadImages('/static/Titles/0001000157523945/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '1000';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[7] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157534E45';
+
+      title.nameFirstLine = 'Sonic The Hedgehog 4';
+      title.nameSecondLine = 'Episode I';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157534E45/FFFD0001';
+      MM_preloadImages('/static/Titles/0001000157534E45/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '1500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[8] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157455245';
+
+      title.nameFirstLine = 'My Aquarium';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157455245/FFFD0002';
+      MM_preloadImages('/static/Titles/0001000157455245/FFFD0002');
+    
+      title.isNew = 'false';
+      title.price = '500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[9] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157464745';
+
+      title.nameFirstLine = 'Frogger Returns';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157464745/FFFD0001';
+      MM_preloadImages('/static/Titles/0001000157464745/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[10] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157423645';
+
+      title.nameFirstLine = 'TV Show King';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157423645/FFFD0001';
+      MM_preloadImages('/static/Titles/0001000157423645/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '1000';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[11] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '00010001574C5745';
+
+      title.nameFirstLine = 'LostWinds';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/00010001574C5745/FFFD0001';
+      MM_preloadImages('/static/Titles/00010001574C5745/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '1000';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[12] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '00010001574D3845';
+
+      title.nameFirstLine = 'Bomberman Blast';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/00010001574D3845/FFFD0001';
+      MM_preloadImages('/static/Titles/00010001574D3845/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '1000';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[13] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157444645';
+
+      title.nameFirstLine = 'Defend your Castle';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157444645/FFFD0001';
+      MM_preloadImages('/static/Titles/0001000157444645/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[14] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157324345';
+
+      title.nameFirstLine = 'Brain Challenge';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157324345/FFFD0001';
+      MM_preloadImages('/static/Titles/0001000157324345/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '1000';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[15] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157525845';
+
+      title.nameFirstLine = 'Mega Man 10';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157525845/FFFD0000';
+      MM_preloadImages('/static/Titles/0001000157525845/FFFD0000');
+    
+      title.isNew = 'false';
+      title.price = '1000';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[16] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157464B45';
+
+      title.nameFirstLine = 'Family Go-Kart';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157464B45/FFFD0001';
+      MM_preloadImages('/static/Titles/0001000157464B45/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '500';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[17] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '00010001574A5745';
+
+      title.nameFirstLine = 'Bejeweled 2';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/00010001574A5745/FFFD0001';
+      MM_preloadImages('/static/Titles/00010001574A5745/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '1000';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[18] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157535745';
+
+      title.nameFirstLine = 'Swords & Soldiers';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157535745/FFFD0001';
+      MM_preloadImages('/static/Titles/0001000157535745/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '1000';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[19] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000157424245';
+
+      title.nameFirstLine = 'Snowboard Riot';
+      title.nameSecondLine = '';
+
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000157424245/FFFD0001';
+      MM_preloadImages('/static/Titles/0001000157424245/FFFD0001');
+    
+      title.isNew = 'false';
+      title.price = '1000';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[20] = title;
+  
+  return recList;
+}
+function inittitlelist4()
+{
+  var recList = new Array();
+  var title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000158484145';
+
+      title.nameFirstLine = 'Pokémon Rumble';
+      title.nameSecondLine = 'Demo';
+      MM_preloadImages('/static/Titles/0001000158484145/FFFD0001');
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000158484145/FFFD0001';
+
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[1] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000158494A45';
+
+      title.nameFirstLine = 'FAST - Racing League';
+      title.nameSecondLine = 'Demo';
+      MM_preloadImages('/static/Titles/0001000158494A45/FFFD0001');
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000158494A45/FFFD0001';
+
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[2] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '00010001584A4945';
+
+      title.nameFirstLine = '2 Fast 4 Gnomz';
+      title.nameSecondLine = 'Demo';
+      MM_preloadImages('/static/Titles/00010001584A4945/FFFD0001');
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/00010001584A4945/FFFD0001';
+
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[3] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000158493245';
+
+      title.nameFirstLine = 'Kyotokei';
+      title.nameSecondLine = 'Demo';
+      MM_preloadImages('/static/Titles/0001000158493245/FFFD0001');
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000158493245/FFFD0001';
+
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[4] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '00010001584A4745';
+
+      title.nameFirstLine = 'Gnomz';
+      title.nameSecondLine = 'Demo';
+      MM_preloadImages('/static/Titles/00010001584A4745/FFFD0001');
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/00010001584A4745/FFFD0001';
+
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[5] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000158485945';
+
+      title.nameFirstLine = 'BIT.TRIP FATE';
+      title.nameSecondLine = 'Demo';
+      MM_preloadImages('/static/Titles/0001000158485945/FFFD0000');
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000158485945/FFFD0000';
+
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[6] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000158495445';
+
+      title.nameFirstLine = 'Fast Draw Showdown';
+      title.nameSecondLine = 'Demo';
+      MM_preloadImages('/static/Titles/0001000158495445/FFFD0001');
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000158495445/FFFD0001';
+
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[7] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000158494245';
+
+      title.nameFirstLine = 'Fish\'em All!';
+      title.nameSecondLine = 'Demo';
+      MM_preloadImages('/static/Titles/0001000158494245/FFFD0001');
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000158494245/FFFD0001';
+
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[8] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000158494345';
+
+      title.nameFirstLine = 'Gods vs Humans';
+      title.nameSecondLine = 'Demo';
+      MM_preloadImages('/static/Titles/0001000158494345/FFFD0007');
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000158494345/FFFD0007';
+
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[9] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000158493745';
+
+      title.nameFirstLine = 'Liight';
+      title.nameSecondLine = 'Demo';
+      MM_preloadImages('/static/Titles/0001000158493745/FFFD0000');
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000158493745/FFFD0000';
+
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[10] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000158484645';
+
+      title.nameFirstLine = 'World of Goo';
+      title.nameSecondLine = 'Demo';
+      MM_preloadImages('/static/Titles/0001000158484645/FFFD0001');
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000158484645/FFFD0001';
+
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[11] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000158483545';
+
+      title.nameFirstLine = 'And Yet It Moves';
+      title.nameSecondLine = 'Demo';
+      MM_preloadImages('/static/Titles/0001000158483545/FFFD0001');
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000158483545/FFFD0001';
+
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[12] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000158495645';
+
+      title.nameFirstLine = 'Mix Superstar';
+      title.nameSecondLine = 'Demo';
+      MM_preloadImages('/static/Titles/0001000158495645/FFFD0001');
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000158495645/FFFD0001';
+
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[13] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000158483845';
+
+      title.nameFirstLine = 'Lead the Meerkats';
+      title.nameSecondLine = 'Demo';
+      MM_preloadImages('/static/Titles/0001000158483845/FFFD0000');
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000158483845/FFFD0000';
+
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[14] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000158485A45';
+
+      title.nameFirstLine = 'Chronos Twins DX';
+      title.nameSecondLine = 'Demo';
+      MM_preloadImages('/static/Titles/0001000158485A45/FFFD0001');
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000158485A45/FFFD0001';
+
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[15] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000158494745';
+
+      title.nameFirstLine = 'Urbanix';
+      title.nameSecondLine = 'Demo';
+      MM_preloadImages('/static/Titles/0001000158494745/FFFD0001');
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000158494745/FFFD0001';
+
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[16] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000158483745';
+
+      title.nameFirstLine = 'LIT';
+      title.nameSecondLine = 'Demo';
+      MM_preloadImages('/static/Titles/0001000158483745/FFFD0001');
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000158483745/FFFD0001';
+
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[17] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000158495345';
+
+      title.nameFirstLine = 'BIT.TRIP FLUX';
+      title.nameSecondLine = 'Demo';
+      MM_preloadImages('/static/Titles/0001000158495345/FFFD0001');
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000158495345/FFFD0001';
+
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[18] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000158485645';
+
+      title.nameFirstLine = 'BIT.TRIP CORE';
+      title.nameSecondLine = 'Demo';
+      MM_preloadImages('/static/Titles/0001000158485645/FFFD0000');
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000158485645/FFFD0000';
+
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[19] = title;
+  
+      title = new TitleInfo();
+      title.titleId = '0001000158494145';
+
+      title.nameFirstLine = 'lilt line';
+      title.nameSecondLine = 'Demo';
+      MM_preloadImages('/static/Titles/0001000158494145/FFFD0001');
+	  title.titleImage = null;
+    
+      title.titleImage = '/static/Titles/0001000158494145/FFFD0001';
+
+    
+      title.isNew = 'false';
+      title.price = '0';
+      title.titleLicense = getTitleLicense(title.titleId);
+
+      recList[20] = title;
+  
+  return recList;
+}

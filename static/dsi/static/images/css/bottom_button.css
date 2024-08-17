@@ -1,0 +1,23 @@
+.button_left {
+    left :   0px;
+    top  : 164px;
+	width  : 128px;
+	height : 28px;
+	background-image : url(../images/button_autogen/violet_128x28_all.gif);
+}
+
+.button_right {
+    left : 128px;
+    top  : 164px;
+	width  : 128px;
+	height : 28px;
+	background-image : url(../images/button_autogen/violet_128x28_all.gif);
+}
+
+.button_center {
+    left :  16px;
+    top  : 152px;
+	width  : 224px;
+	height : 32px;
+	background-image : url(../images/button_autogen/button_224x32_all.gif);
+}

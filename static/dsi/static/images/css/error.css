@@ -1,0 +1,38 @@
+/*  error.css  */
+#errorBgU  {
+	position : absolute;
+	left   :   0px;
+	top    :  30px;
+	width  : 256px;
+	height :   9px;
+	background-image : url(../images/E_bg_u.gif);
+	background-repeat : repeat-x;
+	overflow : hidden;
+}
+
+#errorBgD  {
+	position : absolute;
+	left   :   0px;
+	top    : 105px;
+	width  : 256px;
+	height :   9px;
+	background-image : url(../images/E_bg_d.gif);
+	background-repeat : repeat-x;
+	overflow : hidden;
+}
+
+#errorDownTitle {
+	position : absolute;
+	left   :   0px;
+	top    :  40px;
+	width  : 256px;
+	height :  64px;
+}
+
+#errorCenterButton {
+    left  :  16px;
+    top   : 118px;
+    width  : 224px;
+	height : 32px;
+	background-image : url(../images/button_autogen/button_224x32_all.gif);
+}

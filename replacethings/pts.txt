@@ -1,0 +1,27 @@
+  <div id='balanceInfo'>
+    <script type="text/JavaScript">MM_preloadImages('/static/images//banner/Addpoints_everywhere.gif');</script>
+    <img src="/static/images//spacer.gif" name="PointSpacer" width="130" height="55" border="0"
+     id='PointSpacer' style="position:absolute; top:376px; left:239px; z-index:20;"/>
+    <div id="Wiipoint">
+      <div align="center" class="buttonTextBlackM">Wii Points</div>
+    </div>
+    <div id="point" class="wiiPoint"><span id="currentBalance"></span></div>
+  </div>
+</div>
+
+
+
+REPLACE:
+
+  <div id='balanceInfo' onclick="wiiSelectSound();" onmousedown="window.location.href='/addpts'"
+   onmouseover="MM_swapImage('PointSpacer','','/static/images//banner/Addpoints_everywhere.gif',1);wiiFocusSound();" 
+   onmouseout="MM_swapImgRestore();">
+    <script type="text/JavaScript">MM_preloadImages('/static/images//banner/Addpoints_everywhere.gif');</script>
+    <img src="/static/images//spacer.gif" name="PointSpacer" width="130" height="55" border="0"
+     id='PointSpacer' style="position:absolute; top:376px; left:239px; z-index:20;"/>
+    <div id="Wiipoint">
+      <div align="center" class="buttonTextBlackM">Wii Points</div>
+    </div>
+    <div id="point" class="wiiPoint"><span id="wiipointsbalance">finbalancesys</span></div>
+  </div>
+</div>

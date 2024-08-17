@@ -1,0 +1,272 @@
+
+  /* B_04:  Software Catalog */
+#textIcrExpire {
+    position:absolute;
+    left:36px;
+    top:88px;
+    width:540px;
+    height:200px;
+    z-index:37;
+}
+
+
+#import-E {
+	position:absolute;
+	left:432px;
+	top:9px;
+	width:40px;
+	height:31px;
+	z-index:10;
+}
+#import-J {
+	position:absolute;
+	left:436px;
+	top:6px;
+	width:36px;
+	height:36px;
+	z-index:10;
+}
+#import-P {
+	position:absolute;
+	left:436px;
+	top:6px;
+	width:36px;
+	height:36px;
+	z-index:10;
+}
+.catalogFrame {
+    display:block;
+    position:relative;
+      border:solid 1px #35beed;
+	left:36px;
+	top:88px;
+	width:540px;
+	height:277px;
+	z-index:44;
+	overflow:auto;
+}
+#text01-01 {
+    position:absolute;
+	left:29px;
+	top:28px;
+	width:442px;
+	height:36px;
+	z-index:33;
+	overflow:hidden;
+}
+#text01-02 {
+	position:absolute;
+	left:29px;
+	top:28px;
+	width:442px;
+	height:36px;
+	z-index:34;
+	overflow:hidden;
+}
+#text02-01 {
+	position:absolute;
+	left:36px;
+	top:88px;
+	width:540px;
+	height:277px;
+	z-index:37
+}
+#page {
+	position:absolute;
+	left:428px;
+	top:385px;
+	width:92px;
+	height:36px;
+	z-index:20;
+}
+
+#arrowR {
+	position:absolute;
+	left:525px;
+	top:385px;
+	width:52px;
+	height:52px;
+	z-index:39;
+}
+#arrowRshadow {
+	position:absolute;
+	left:516px;
+	top:377px;
+	width:71px;
+	height:72px;
+	z-index:2;
+}
+#L {
+	position:absolute;
+	left: 372px;
+	top: 385px;
+	width:52px;
+	height:52px;
+	z-index:38;
+}
+#arrowLshadow {
+	position:absolute;
+	left:362px;
+	top:377px;
+	width:71px;
+	height:72px;
+	z-index:1;
+}
+/* B_04:  Software Catalog */
+
+body {
+	width: 500px; height: 400px;
+	background-repeat: no-repeat;
+	background-color: #FFFFFF; 
+}
+#Laypanel04er23 {
+	position:absolute;
+	left:0px;
+	top:277px;
+	width:488px;
+	height:91px;
+	z-index:1;
+}
+#ImageforCatalogpage {
+	position:absolute;
+	left:18px;
+	top:9px;
+	width:96px;
+	height:72px;
+	z-index:9;
+}
+#dammyImage {
+	position:absolute;
+	left:18px;
+	top:194px;
+	width:96px;
+	height:72px;
+	z-index:4;
+}
+#TitleName1stline {	position:absolute;
+	left:120px;
+	top:8px;
+	width:350px;
+	z-index:10;
+}
+#Publisher {
+	position:absolute;
+	left:120px;
+	top:46px;
+	width:350px;
+	height:18px;
+	z-index:12;
+}
+#Platform {
+	position:absolute;
+	left:120px;
+	top:64px;
+	width:220px;
+	height:14px;
+	z-index:13;
+}
+#points {
+	position:absolute;
+	left:264px;
+	top:64px;
+	width:206px;
+	height:18px;
+	z-index:2;
+}
+#TitleName2stline {
+	position:absolute;
+	left:120px;
+	top:26px;
+	width:350px;
+	z-index:11;
+}
+#NEW1 {
+	position:absolute;
+	left:18px;
+	top:-20px;
+	width:150px;
+	height:23px;
+	z-index:6;
+}
+#NEW2 {
+	position:absolute;
+	left:176px;
+	top:-20px;
+	width:150px;
+	height:16px;
+	z-index:5;
+}
+#NEWtext1 {
+	position:absolute;
+	left:21px;
+	top:-18px;
+	width:145px;
+	height:16px;
+	z-index:7;
+}
+#NEWtext2 {
+	position:absolute;
+	left:179px;
+	top:-18px;
+	width:145px;
+	height:16px;
+	z-index:7;
+}
+#spacer {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:488px;
+	height:91px;
+	z-index:14;
+}
+#panel {
+    display:block;
+    position:relative;
+}
+
+
+.startbtns {
+	font-family: "Wii NTLG PGothic JPN Regular";
+	background-color:rgb(255, 255, 255);
+	transition:.5s;
+	border-radius: 1px;
+	font-weight: bold;
+	border: 2px solid #34BEED;
+
+}
+.startbtns:hover {
+	font-family: "Wii NTLG PGothic JPN Regular";
+	background-color:rgb(238, 238, 238);
+	border: 2px solid #238fb3;
+	border-radius: 5px;
+	transition:.5s;
+	box-shadow: 0 12px 16px 0 rgba(0, 103, 134, 0.24), 0 3px 3px 0 rgba(0,0,0,0.19);
+	font-weight: bolder;
+}
+.startbtns:active {
+	font-family: "Wii NTLG PGothic JPN Regular";
+	background-color:rgb(197, 218, 228);
+	border: 2px solid #2cb2df;
+	border-radius: 5px;
+	transition:.5s;
+	box-shadow: 0 12px 16px 0 rgba(0, 103, 134, 0.24), 0 3px 3px 0 rgba(0,0,0,0.19);
+	font-weight: boldest;
+}
+.startbtnsDISABLED {
+	font-family: "PW-RodinNTLG TT M";
+	background-color:rgb(0, 0, 0);
+	color:rgb(216, 216, 216);
+	border:dotted;
+	transition:3s;
+	border:dotted;
+	opacity: 0.3;
+}
+.startbtnsDISABLED:hover {
+font-family: "PW-RodinNTLG TT M";
+	background-color:rgb(97, 97, 97);
+	color:rgb(216, 216, 216);
+	transition:.5s;
+	box-shadow: 0 0px 0px 0 rgba(0, 39, 51, 0), 0 0px 0px 0 rgbrgba(0, 0, 0, 0);
+	opacity: 0.7;
+}

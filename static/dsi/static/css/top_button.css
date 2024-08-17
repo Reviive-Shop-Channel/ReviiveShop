@@ -1,0 +1,23 @@
+.button_points {
+	width  : 24px;
+	height : 24px;
+	background-image : url(../images/points.gif);
+    left : 104px;
+	top :  1px;
+}
+
+.button_triangle {
+	width  : 24px;
+	height : 24px;
+	background-image : url(../images/triangle.gif);
+    left : 130px;
+	top :  1px;
+}
+
+.button_hatena {
+	width  : 24px;
+	height : 24px;
+	background-image : url(../images/hatena.gif);
+    left : 156px;
+	top :  1px;
+}

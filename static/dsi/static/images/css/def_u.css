@@ -1,0 +1,76 @@
+.page_title {
+    position: fixed;
+	left   : 0px;
+	top    : 0px;
+	width  : 252px;
+	height : 22px;
+	background-image : url(../images/titleBar.gif);
+	background-repeat : repeat-x;
+	background-position : 0px 0px;
+	overflow : hidden;
+	display        : table-cell;
+	vertical-align : middle;
+	text-align     : left;
+	z-index : 5;
+	padding : 0px 2px;
+}
+
+.your_points {
+	position : fixed;
+	left   : 0px;
+	top    : 172px;
+	width  : 256px;
+	height : 20px;
+	background-image : url(../images/pointBar.gif);
+	background-repeat : repeat-x;
+	background-position : 0px 0px;
+	overflow : hidden;
+	display        : table-cell;
+	vertical-align : middle;
+	text-align     : center;
+	z-index : 5;
+	padding : 0px;
+}
+
+.bg_image {
+    position: absolute;
+	left   : 0px;
+	top    : 0px;
+}
+
+.up_message {
+	position : absolute;
+	left  :   0px;
+	top   :  26px;
+	width : 248px;
+	height: 140px;
+	margin: 0px 4px;
+}
+
+.up_message_scrollable {
+	width : 248px;
+	margin  : 26px 4px 22px 4px;
+}
+
+#upBase {
+    position: absolute;
+	left   : 0px;
+	top    : 0px;
+}
+/* error scene */
+#errorTitle {
+	position : fixed;
+	left   : 0px;
+	top    : 0px;
+	width  : 248px;
+	height : 22px;
+	background-image : url(../images/E_u_bar.gif);
+	background-repeat : repeat-x;
+	background-position : 0px 0px;
+	overflow : hidden;
+	display        : table-cell;
+	vertical-align : middle;
+	text-align     : left;
+	z-index : 5;
+	padding : 0px 4px;
+}

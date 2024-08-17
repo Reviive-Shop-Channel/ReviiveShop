@@ -1,0 +1,17 @@
+.message {
+	position : absolute;
+	left  :   0px;
+	top   :  28px;
+	width : 248px;
+	height: 124px;
+	margin: 0px 4px;
+}
+
+.message_long {
+	position : absolute;
+	left  :   0px;
+	top   :   0px;
+	width : 248px;
+	height: 152px;
+	margin: 0px 4px;
+}

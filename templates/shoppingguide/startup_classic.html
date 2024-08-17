@@ -1,0 +1,575 @@
+<script>
+    var wiishop = new wiiShop();
+    const unused = wiishop.connecting;
+</script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Wii Shop Channel (English)</title>
+<script  type="text/javascript" language="JavaScript" src='/static/js/shop.js'></script>
+<script  type="text/javascript" language="JavaScript" src='/static/js/sound.js'></script>
+<script  type="text/javascript" language="JavaScript" src='/static/js/images.js'></script>
+<script  type="text/javascript" language="JavaScript" src='/static/js/manual.js'></script>
+<script language="JavaScript" src='/static/js/input_shop.js'></script>
+<script>
+	shop.setWallpaper(3)
+</script>
+
+<script type="text/JavaScript">
+            setTimeout(redirect, 50000);
+            function redirect() {
+              shop.beginWaiting(),
+                window.location.href = "/homepage";
+              
+            }
+
+</script>
+
+<script>
+    snd.playBGM()
+   if (snd && "playBGM" in snd) {
+       snd.playBGM();
+    }
+</script>
+
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #dbdbdb;
+}
+#Layer1 {
+	position:absolute;
+	left:78px;
+	top:19px;
+	width:219px;
+	height:27px;
+	z-index:1;
+}
+#Layer2 {
+	position:absolute;
+	left:92px;
+	top:28px;
+	width:212px;
+	height:29px;
+	z-index:1;
+}
+#Layer3 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:20px;
+	height:0px;
+	z-index:2;
+}
+#Layer4 {
+	padding-left:25px;
+	padding-top:26px;
+	z-index:0;
+}
+#Layer5 {
+	padding-left:20px;
+	z-index:1;
+}
+#Layer6 {
+	padding-top:5px;
+	z-index:0;
+}
+#Layer7 {
+	padding-top:3px;
+	z-index:0;
+}
+#Layer8 {
+	padding-top:2px;
+	z-index:0;
+}
+.button {
+	padding-top: 2px;
+	width: 330px;
+	height: 54px;
+	background-image: url("/static/shoppingguide/img/index_botton.png");
+}
+.style4 {
+	color: #333333;
+	font: normal 19px "Wii NTLG PGothic Regular";
+	padding-right: 20px;
+}
+.style5 {color: #333333; font: bold normal 22px "Wii NTLG PGothic Regular"; }
+.style18 {font-size: 8px}
+.style22 {color: #333333; font: bold normal 22px "Wii NTLG PGothic Regular"; font-family: "Wii NTLG PGothic Regular"; }
+.style23 {color: #333333; font: normal 19px "Wii NTLG PGothic Regular"; font-family: "Wii NTLG PGothic Regular"; }
+.style24 {font-family: "Wii NTLG PGothic Regular"}
+.style25 {	color: #333333;
+	font-family: "Wii NTLG PGothic Regular";
+	font-size: 19px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+}
+.style11 {	font: normal 30px "Wii NTLG PGothic Regular";
+	color: #FFFFFF;
+	font-family: "Wii NTLG PGothic Regular";
+}
+.style7 {	color: #333333;
+	font: normal 14pt "Wii NTLG PGothic Regular";
+}
+.style8 {	font-size: 14pt;
+	font-weight: normal;
+	color: #333333;
+	font-family: "Wii NTLG PGothic Regular";
+}
+#content {
+  height: 292px;
+  overflow: auto;
+}
+-->
+</style>
+
+<script type="text/javascript">
+<!--
+function chimg(layerName){
+	document.getElementById(layerName).style.backgroundImage="url(/static/shoppingguide/img/index_botton_ro.png)";
+}
+function bkimg(layerName){
+	document.getElementById(layerName).style.backgroundImage="url(/static/shoppingguide/img/index_botton.png)";
+}
+
+//-->
+</script>
+<script  type="text/javascript" language="JavaScript" src='/static/js/shop.js'></script>
+<script  type="text/javascript" language="JavaScript" src='/static/js/sound.js'></script>
+<script  type="text/javascript" language="JavaScript" src='/static/js/images.js'></script>
+<script  type="text/javascript" language="JavaScript" src='/static/js/manual.js'></script>
+<link href="channel.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+.style51 {color: #333333; font: bold normal 22px "PW-RodinNTLG TT M"; }
+.style81 {font-size: 14pt;
+	font-weight: normal;
+	color: #333333;
+	font-family: "Wii NTLG Gothic JPN Regular";
+}
+.bottom_text {	font-family: "Wii NTLG PGothic Regular";
+	font-size: 16pt;
+	font-weight: normal;
+	color: #666666; }
+.bottom_text {	padding-top: 2px;
+}
+.bottom_text2 {	padding-top: 1px;
+}
+.style9 {	font-family: "Wii NTLG PGothic Regular";
+	font-weight: normal;
+	color: #333333;
+}
+.Stil1 {font-size: 16px}
+
+</style>
+</head>
+<body  onload="initPage(); content.focus();MM_preloadImages(
+	'/static/shoppingguide/img/back_contents_bar_ro_ukv.png',
+	'/static/shoppingguide/img/CHM_common_source/background_gray.png',
+	'/static/shoppingguide/img/index_botton.png',
+	'/static/shoppingguide/img/index_botton_ro.png');"
+	onfocus="MM_swapImage('Image13?0','','/static/shoppingguide/img/index_botton_ro.png',1)" 
+	background="/static/shoppingguide/img/CHM_common_source/background_gray.png">
+<div style="position:absolute; left:0px; top:0px; width:1px; height:1px; 
+z-index:6;">
+  <img src="../../../images/spacer.gif" name="ktouch" width="1" height=
+"1" border="0" id="ktouch"/>
+</div>
+<table  cellpadding="0" cellspacing="0" width="100%">
+<tr><td background="/static/shoppingguide/img/CHM_common_source/Top_bar_bg.png" align="center">
+		<table width="608" height="71" border="0" align="center" cellpadding="0" cellspacing="0">
+		  <tr>
+		    <th width="470" background="/static/shoppingguide/img/CHM_common_source/Top_bar_bg.png" scope="col" align="left">
+	    	<div class="style11" id="Layer4"><span class="topFrame_Title"> Wii<font size="-4">&nbsp;&nbsp;</font>Shop<font size="-4">&nbsp;&nbsp;</font>Channel </span></div>		    </th>
+		    <th width="138" scope="col"><div align="right"><img src="/static/shoppingguide/img/Top_Wii_logo.png" alt="Wii" width="138" height="71" /></div></th>
+		  </tr>
+	  </table>
+	</td></tr>
+</table>
+<table width="100%" height="30"  cellpadding="0" cellspacing="0">
+<tr><td height="30" align="center" background="/static/shoppingguide/img/contents_bar.png">
+		<table width="608" height="30" border="0" align="center" cellpadding="0" cellspacing="0">
+		  <tr>
+		    <th background="/static/shoppingguide/img/contents_bar.png" scope="col" align="left">
+		    	       <div class="Button_Number" id="Layer5"> 
+		    	         <div align="left"><img src="/static/shoppingguide/img/spacer.png" width="8" height="15" /><span class="contentsFrameText">Contents</span></div>
+		    	       </div>
+		    </th>
+		  </tr>
+	  </table>
+	</td></tr>
+</table>
+<div id="content" onblur="content.focus();">
+<div class="divguide" align="center" >
+
+	<div style="margin:0 30px 0 0;">
+	<img src="/static/shoppingguide/img/spacer.png" width="7" height="7" />
+	</div>
+	<div style="margin:0 30px 0 0;">
+		<div class="button" onclick="jump('#');wiiSelectSound()" onmouseover="chimg('menu1');wiiFocusSound()" onmouseout="bkimg('menu1');" name="menu1">
+		  <table width="393" height="54" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="56" align="center" class="style51">1</td>
+              <td class="ButtonPadding_20px" align="center">About the Wii Shop Channel</td>
+            </tr>
+          </table>
+		</div>
+	</div>
+	<div style="margin:0 30px 0 0;">
+		<div class="button" onclick="jump('#');wiiSelectSound()" onmouseover="chimg('menu2');wiiFocusSound()" onmouseout="bkimg('menu2')" name="menu2">
+		  <table width="393" height="54" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="56" align="center" class="style51">2</td>
+              <td class="ButtonPadding_20px" align="center">Virtual Console&trade;</td>
+            </tr>
+          </table>
+		</div>
+	</div>
+	<div style="margin:0 30px 0 0;">
+	 <div class="button" onclick="jump('#');wiiSelectSound()" onmouseover="chimg('menu3');wiiFocusSound()" onmouseout="bkimg('menu3')" name="menu3">
+	  <table width="393" height="54" border="0" cellpadding="0" cellspacing="0">
+       <tr>
+        <td width="56" align="center" class="style51">3</td>
+        <td class="ButtonPadding_20px" align="center">WiiWare&trade;</td>
+       </tr>
+      </table>
+	 </div>
+	</div>
+	<div style="margin:0 30px 0 0;">
+	 <div class="button" onclick="jump('#');wiiSelectSound()" onmouseover="chimg('menu4');wiiFocusSound()" onmouseout="bkimg('menu4')" name="menu4">
+	  <table width="393" height="54" border="0" cellpadding="0" cellspacing="0">
+       <tr>
+        <td width="56" align="center" class="style51">4</td>
+        <td class="ButtonPadding_20px" align="center">Wii Channels</td>
+       </tr>
+      </table>
+	 </div>
+	</div>
+	<div style="margin:0 30px 0 0;">
+		<div class="button" onclick="jump('#');wiiSelectSound()" onmouseover="chimg('menu5');wiiFocusSound()" onmouseout="bkimg('menu5')" name="menu5">
+		  <table width="393" height="54" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="56" align="center" class="style51">5</td>
+              <td class="ButtonPadding_20px" align="center">Downloading Software</td>
+            </tr>
+          </table>
+		</div>
+	</div><div style="margin:0 30px 0 0;">
+		<div class="button" onclick="jump('#');wiiSelectSound()" onmouseover="chimg('menu6');wiiFocusSound()" onmouseout="bkimg('menu6')" name="menu6">
+		  <table width="393" height="54" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="56" align="center" class="style51">6</td>
+              <td class="ButtonPadding_20px" align="center">Adding Wii Points&trade;</td>
+            </tr>
+          </table>
+		</div>
+	</div><div style="margin:0 30px 0 0;">
+		<div class="button" onclick="jump('#');wiiSelectSound()" onmouseover="chimg('menu7');wiiFocusSound()" onmouseout="bkimg('menu7')" name="menu7">
+		  <table width="393" height="54" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="56" align="center" class="style51">7</td>
+              <td class="ButtonPadding_20px" align="center">Gifts</td>
+            </tr>
+          </table>
+		</div>
+	</div><div style="margin:0 30px 0 0;">
+		<div class="button" onclick="jump('#');wiiSelectSound()" onmouseover="chimg('menu8');wiiFocusSound()" onmouseout="bkimg('menu8')" name="menu8">
+		  <table width="393" height="54" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="56" align="center" class="style51">8</td>
+              <td class="ButtonPadding_20px" align="center">Account Activity</td>
+            </tr>
+          </table>
+		</div>
+	</div><div style="margin:0 30px 0 0;">
+		<div class="button" onclick="jump('#');wiiSelectSound()" onmouseover="chimg('menu9');wiiFocusSound()" onmouseout="bkimg('menu9')" name="menu9">
+		  <table width="393" height="54" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="56" align="center" class="style51">9</td>
+              <td class="ButtonPadding_20px" align="center">Titles You’ve Downloaded</td>
+            </tr>
+          </table>
+		</div>
+	</div><div style="margin:0 30px 0 0;">
+		<div class="button" onclick="jump('#');wiiSelectSound()" onmouseover="chimg('menu10');wiiFocusSound()" onmouseout="bkimg('menu10')" name="menu10">
+		  <table width="393" height="54" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="56" align="center" class="style51">10</td>
+              <td class="ButtonPadding_20px" align="center">Settings and Features</td>
+            </tr>
+          </table>
+		</div>
+	</div><div style="margin:0 30px 0 0;">
+		<div class="button" onclick="jump('#');wiiSelectSound()" onmouseover="chimg('menu11');wiiFocusSound()" onmouseout="bkimg('menu11')" name="menu11">
+		  <table width="393" height="54" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="56" align="center" class="style51">11</td>
+              <td class="ButtonPadding_20px" align="center">Parental Controls</td>
+            </tr>
+          </table>
+		</div>
+	</div><div style="margin:0 30px 0 0;">
+		<div class="button" onclick="jump('#');wiiSelectSound()" onmouseover="chimg('menu12');wiiFocusSound()" onmouseout="bkimg('menu12')" name="menu12">
+		  <table width="393" height="54" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="56" align="center" class="style51">12</td>
+              <td class="ButtonPadding_20px" align="center">Customer Support</td>
+            </tr>
+          </table>
+		</div></div>
+	<div style="margin:0 30px 0 0;"></div>
+	
+		  
+	  <div style="margin:0 30px 0 0;">
+		<table cellpadding="0" cellspacing="0" border="0" width="398" height="35">
+			<tr>
+				<td colspan="2"><p class="Copyright_index">&copy;2006 Nintendo. &trade;, &reg; and the Wii logo are trademarks of Nintendo.
+<br><br>
+
+<span style="color:rgb(207, 207, 207); font-weight:900px; font-size:13px;">Credit to @andry6702 on Discord for finding the wii shop channel shop guide page. </span>
+</p></td>
+			</tr>
+		</table>
+	</div>
+  </div>
+</div>
+<table width="100%" height="30"  cellpadding="0" cellspacing="0">
+ <tr>
+ <td height="63" align="center" background="/static/shoppingguide/img/under_bar.png">
+ <table width="608" height="63" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <th background="/static/shoppingguide/img/under_bar.png" scope="col" valign="top"> <div style="padding-top:0px;">
+<!-- BEGIN BOTTOM ICONS **SCROLL NEXTPAGE SELECT** -->
+      <table width="402" height="63" border="0" align="left" cellpadding="0" cellspacing="0">
+          <tr align="left">
+           <td width="45" valign="top"><div align="left" class="bottom_text" id="Layer8"><img src="/static/shoppingguide/img/spacer.png" width="20" height="5" /><img src="/static/shoppingguide/img/index_bottom_icon_1.png" width="24" height="28" /></div></td>
+           <td width="60" valign="top"><div align="left" class="bottom_text2"><span class="bottom_text"><span class="style9">:<img src="/static/shoppingguide/img/spacer.png" width="2" height="10" /></span><span class="style8">Scroll</span></span></div></td>
+           <td width="45" valign="top"><div align="left" class="bottom_text" id="Layer8"><img src="/static/shoppingguide/img/spacer.png" width="20" height="5" /><img src="/static/shoppingguide/img/index_bottom_icon_4.gif" width="24" height="24" style="margin-top:2px" /></div></td>
+           <td width="110" valign="top"><div align="left" class="bottom_text2"><span class="bottom_text"><span class="style9">:<img src="/static/shoppingguide/img/spacer.png" width="2" height="10" /></span><span class="style8">Next Page</span></span></div></td>
+		   <td width="10"><img src="/static/shoppingguide/img/spacer.png" width="5" height="5" /></td>
+           <td width="24" valign="top"><div align="left" class="bottom_text" id="Layer8"><img src="/static/shoppingguide/img/index_bottom_icon_2.png" width="23" height="28" /></div></td>
+           <td width="105" valign="top"><div align="left" class="bottom_text2"><span class="bottom_text"><span class="style9">:</span><span class="style8"><span class="style9"><img src="/static/shoppingguide/img/spacer.png" width="2" height="10" /></span>Select</span></span></div></td>
+          </tr>
+         </table>
+<!-- END BOTTOM ICONS  **SCROLL NEXTPAGE SELECT** -->
+<!-- BEGIN BOTTOM ICONS **SCROLL SELECT**
+		 <table width="100%" height="30"  cellpadding="0" cellspacing="0">
+<tr><td height="63" align="center" background="/static/shoppingguide/img/under_bar.png"><table width="608" height="63" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <th background="/static/shoppingguide/img/under_bar.png" scope="col" valign="top"> <div style="padding-top:0px;">
+      <table width="402" height="63" border="0" align="left" cellpadding="0" cellspacing="0">
+        <tr align="left">
+          <td width="45" valign="top"><div align="left" class="bottom_text" id="Layer8"><img src="/static/shoppingguide/img/spacer.png" width="20" height="5" /><img src="/static/shoppingguide/img/index_bottom_icon_1.png" width="24" height="28" /></div></td>
+          <td width="105" valign="top"><div align="left" class="bottom_text2"><span class="bottom_text"><span class="style9">:<img src="/static/shoppingguide/img/spacer.png" width="2" height="10" /></span><span class="style8">Scroll</span></span></div></td>
+          <td width="10"><img src="/static/shoppingguide/img/spacer.png" width="5" height="5" /></td>
+          <td width="24" valign="top"><div align="left" class="bottom_text" id="Layer8"><img src="/static/shoppingguide/img/index_bottom_icon_2.png" width="23" height="28" /></div></td>
+          <td width="122" valign="top"><div align="left" class="bottom_text2"><span class="bottom_text"><span class="style9">:</span><span class="style8"><span class="style9"><img src="/static/shoppingguide/img/spacer.png" width="2" height="10" /></span>Select</span></span></div></td>
+          <td width="52">&nbsp;</td>
+          <td width="8">&nbsp;</td>
+          <td width="11">&nbsp;</td>
+        </tr>
+      </table>
+-- END BOTTOM ICONS **SCROLL SELECT** -->
+
+      <div align="left"><img src="/static/shoppingguide/img/back_contents_bar_ukv.png" alt="bar" width="127" height="63" id="Image1" onmouseover="MM_swapImage('Image1','','/static/shoppingguide/img/back_contents_bar_ro_ukv.png',1); wiiFocusSound();" onmouseout="MM_swapImgRestore()" onclick="homepage();"  onmousedown="wiiCancelSound();" ></div>
+    </div></th>
+  </tr>
+</table></td></tr>
+</table>
+
+<script>
+	function homepage() {
+		window.location.href = "/homeclassic";
+	}
+</script>
+
+</body>
+</html>
+
+
+<style>
+
+	body  {
+		background-color:white;
+	}
+
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:active {text-decoration:none;}
+a:hover {text-decoration:none;}
+
+#Layer1_topframe {
+	padding-left:25px;
+	padding-top:26px;
+	z-index:0;
+}
+#Layer1_contentsFrame {
+	padding-left:20px;
+	z-index:1;
+}
+#Layer1_mainframe {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:20px;
+	height:0px;
+	z-index:2;
+}
+.Channel {
+	font-family: "Wii NTLG PGothic Regular";
+}
+.contentsFrameBar {
+	font-family: "Wii NTLG PGothic Regular";
+	font-size: 16pt;
+	font-weight: normal;
+}
+.contentsFrameText {
+	font-family: "Wii NTLG PGothic Regular";
+	font-size: 14pt;
+	font-weight: normal;
+	color: #333333;
+}
+.topFrame_Title {
+	font-family: "Wii NTLG PGothic Regular";
+	font-size: 30px;
+	color: #FFFFFF;
+	letter-spacing: -1px;
+}
+.PageTitle {
+	font-family: "Wii NTLG PGothic Regular";
+	font-size: 25px;
+	color: #FFFFFF;
+	letter-spacing: -1px;
+}
+.PageTitle1 {
+	font-family: "Wii NTLG PGothic Regular";
+	font-size: 23px;
+	color: #FFFFFF;
+	letter-spacing: -1px;
+}
+.PageNumber {
+	font-family: "Wii NTLG PGothic Regular";
+	font-size: 28px;
+	font-weight: bold;
+	color: #333333;
+}
+.MainText {
+	font-family: "Wii NTLG PGothic Regular";
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: 0px;
+	color: #333333;
+	margin-top: 10px;	
+}
+.Copyright {
+	font-family: "Wii NTLG PGothic Regular";
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}
+.Copyright_index {
+	font-family: "Wii NTLG PGothic Regular";
+	font-size: 12px;
+	font-weight: 600;
+	line-height:15px;
+	padding-left: 55px;
+	padding-right:16px;
+	margin-top:0px;
+	color: #737373;
+}
+.cyan {
+	font-family: "Wii NTLG PGothic Regular";
+	font-weight: bold;
+	font-size: 18px;
+	color: #00D4F7;
+}
+.color_blue		{color: #43B6DF;}
+.redText {
+	font-family: "Wii NTLG PGothic Regular";
+	font-weight: normal;
+	font-size: 18px;
+	color: #FF0000
+}
+.Q {
+	font-family: "Wii NTLG PGothic Regular";
+	font-weight: bolder;
+	font-size: 22px;
+	color: #FFFFFF;
+}
+.A {
+	font-family: "Wii NTLG PGothic Regular";
+	font-weight: bolder;
+	font-size: 22px;	
+	color: #333333;
+}
+.Question {
+	font-family: "Wii NTLG PGothic Regular";
+	font-weight: bold; 
+	font-size: 18px;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+}
+.Answer {
+	font-family: "Wii NTLG PGothic Regular";
+	font-weight: normal; 
+	font-size: 18px;
+	letter-spacing: 0px;
+	color: #333333;
+}
+.ButtonPadding_20px {
+	font-family: "Wii NTLG PGothic Regular";
+	font-size: 19px;
+	font-weight: normal;
+	color: #333333;
+	padding-right: 20px;
+}
+.Spacer_8px {
+	font-family: "Wii NTLG PGothic Regular";
+	font-size: 8px;
+	font-weight: normal;
+	color: #333333;
+}
+.button {
+	padding-top: 2px;
+	width: 393px;
+	height: 54px;
+	background-image: url("/static/shoppingguide/img/index_botton.png");
+}
+.Buttons_ContentMenu_Text {
+	font-family: "Wii NTLG PGothic Regular";
+	font-size: 19px;
+	font-weight: normal;
+	color: #333333;
+}
+.Buttons_ContentMenu_Number {
+	font-family: "Wii NTLG PGothic Regular";
+	font-size: 19px;
+	font-weight: bold;
+	color: #333333;
+}
+.kakomi {
+	font-family: "Wii NTLG Gothic JPN Regular";
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: normal;
+	color:#FFFFFF;
+	background-color: #999999;
+	text-align: justify;
+	padding-right:20px;
+	padding-left:10px;
+}
+/*data*/
+table.data			{border-collapse:collapse;font-family:"Wii NTLG PGothic Regular";} 
+.data th,.data td	{border:1px #666666 solid;color:#333333;text-align:justify;padding:5px 10px;font-size:20px;}
+.data thead	th		{background-color:#00D4F7; color:#FFFFFF;}
+.data th			{white-space:nowrap;text-align:center;}
+.data td			{width:99%;}
+</style>

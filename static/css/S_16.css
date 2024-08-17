@@ -1,0 +1,212 @@
+/* S_16 */
+
+body {
+	background-color: white;
+	background-repeat: no-repeat;
+	overflow-x:hidden;
+}
+
+
+#text00-01 {
+	position:absolute;
+	left:29px;
+	top:28px;
+	width:442px;
+	height:28px;
+	z-index:62;
+    text-align:"left";
+}
+#message {
+	position:absolute;
+	left:120px;
+	top:309px;
+	width:442px;
+	height:28px;
+	z-index:62;
+    text-align:"left";
+}
+.helpee {
+	position:absolute;
+	left:45px;
+	top:110px;
+	width:513px;
+	height:132px;
+	z-index:60;
+}
+.textbox {
+	position:absolute;
+	border-top-width: 2px;
+	top: 267px;
+	height: 35px;
+	width:  340px;
+	left:  130px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #EAEAEA;
+	border-left-color: #CCCCCC;
+	font-size: 20px;
+}
+	
+
+#text02-01 {
+	position:absolute;
+	left:50px;
+	top:89px;
+	width:508px;
+	height:86px;
+	z-index:31;
+}
+
+.textspace {
+    position:absolute;
+    display:table;
+    line-height:18px;
+    left:8px;
+    top:106px;
+    width:210px;
+    height:37px;
+    z-index:29;
+}
+
+#text03 {
+	position:absolute;
+	left:29px;
+	top:28px;
+	width:442px;
+	height:28px;
+ 	z-index:62;
+    text-align:"left";
+}
+
+
+#text04{
+	position:absolute;
+	left:29px;
+	top:28px;
+	width:442px;
+	height:28px;
+	z-index:62;
+}
+
+.catalogFrame {
+	position:absolute;
+	border:solid 1px #35beed;
+	left:36px;
+	top:88px;
+	width:540px;
+	height:265px;
+	z-index:44;
+	overflow:auto;
+	padding:4px 3px 5px 3px;
+	margin:0px 4px;
+}
+
+#helperentrance {
+    position:absolute;
+    left:62px;
+    top:198px;
+    width:226px;
+    height:156px;
+}
+
+.banner {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    z-index:28;
+}
+
+.spacer {
+	position:absolute;
+    left:0px;
+    top:0px;
+	z-index:30;
+}
+
+#helpeeentrance {
+    position:absolute;
+    left:320px;
+    top:198px;
+    width:226px;
+    height:156px;
+}
+
+.helper {
+    color:#0069D6;
+}
+
+.helpee {
+    color:#F56200;
+}
+
+li {
+    margin-top:0.25em;
+}
+
+.contentsBlack_S_16 {
+	font-family: "Wii NTLG PGothic JPN Regular";
+	font-size: 16px;
+	color: #323232;
+	font-weight: normal;
+	line-height:18px;
+}
+
+.aboutExplain {
+	line-height: 1.2;
+}
+
+
+
+.startbtns {
+	font-family: "Wii NTLG PGothic JPN Regular";
+	background-color:rgb(255, 255, 255);
+	transition:.5s;
+	border-radius: 1px;
+	font-weight: bold;
+	border: 2px solid #34BEED;
+
+}
+.startbtns:hover {
+	font-family: "Wii NTLG PGothic JPN Regular";
+	background-color:rgb(238, 238, 238);
+	border: 2px solid #238fb3;
+	border-radius: 5px;
+	transition:.5s;
+	box-shadow: 0 12px 16px 0 rgba(0, 103, 134, 0.24), 0 3px 3px 0 rgba(0,0,0,0.19);
+	font-weight: bolder;
+}
+.startbtns:active {
+	font-family: "Wii NTLG PGothic JPN Regular";
+	background-color:rgb(197, 218, 228);
+	border: 2px solid #2cb2df;
+	border-radius: 5px;
+	transition:.5s;
+	box-shadow: 0 12px 16px 0 rgba(0, 103, 134, 0.24), 0 3px 3px 0 rgba(0,0,0,0.19);
+	font-weight: boldest;
+}
+.startbtnsDISABLED {
+	font-family: "PW-RodinNTLG TT M";
+	background-color:rgb(0, 0, 0);
+	color:rgb(216, 216, 216);
+	border:dotted;
+	transition:3s;
+	border:dotted;
+	opacity: 0.3;
+}
+.startbtnsDISABLED:hover {
+font-family: "PW-RodinNTLG TT M";
+	background-color:rgb(97, 97, 97);
+	color:rgb(216, 216, 216);
+	transition:.5s;
+	box-shadow: 0 0px 0px 0 rgba(0, 39, 51, 0), 0 0px 0px 0 rgbrgba(0, 0, 0, 0);
+	opacity: 0.7;
+}

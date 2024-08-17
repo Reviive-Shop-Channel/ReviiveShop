@@ -1,0 +1,1 @@
+shop.setWallpaper(2);
