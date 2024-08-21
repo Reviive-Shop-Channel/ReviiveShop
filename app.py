@@ -143,11 +143,12 @@ import requests
 import mysql.connector
 import no_connection_close
 from nocache import nocache
+import config
 
  # please update from fin to dif text 
 
 def ptsloading():
-    mysqlcon = mysql.connector.connect(user="rvshop_2024",password="4BlAnC72&",host="usest1.netro.host",database="rvshop_2024dev",port="10086")
+    mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
     mycur = mysqlcon.cursor()
     usr = request.cookies.get("usr")
     if bancheck(usr) == True:
@@ -160,7 +161,7 @@ def ptsloading():
     mysqlcon.close()
     return current_points
 def updpts(ptns):
-    mysqlcon = mysql.connector.connect(user="rvshop_2024",password="4BlAnC72&",host="usest1.netro.host",database="rvshop_2024dev",port="10086")
+    mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
     mycur = mysqlcon.cursor()
     usr = request.cookies.get("usr")
     if bancheck(usr) == True:
@@ -184,7 +185,7 @@ def updpts(ptns):
     mycur.execute(updatesql)
     mysqlcon.commit()
 def cardpoint(cardnb):
-    mysqlcon = mysql.connector.connect(user="rvshop_2024",password="4BlAnC72&",host="usest1.netro.host",database="rvshop_2024dev",port="10086")
+    mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
     mycur = mysqlcon.cursor()
     usr = request.cookies.get("usr")
     if bancheck(usr) == True:
@@ -207,7 +208,7 @@ def cardpoint(cardnb):
     mysqlcon.commit()
     return "ok"
 def accountdeletion(usr, pwd, usr2, pwd2):
-    mysqlcon = mysql.connector.connect(user="rvshop_2024",password="4BlAnC72&",host="usest1.netro.host",database="rvshop_2024dev",port="10086")
+    mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
     mycur = mysqlcon.cursor()
     if usr2 == usr and pwd2 == pwd:
         getpwd = f"SELECT pass FROM users WHERE username = '{usr}'"
@@ -225,7 +226,7 @@ def accountdeletion(usr, pwd, usr2, pwd2):
     else:
         return "failed"
 def bancheck(usr):
-    mysqlcon = mysql.connector.connect(user="rvshop_2024",password="4BlAnC72&",host="usest1.netro.host",database="rvshop_2024dev",port="10086")
+    mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
     mycur = mysqlcon.cursor()
     bancheck_sql = f"SELECT isBanned FROM users WHERE username = '{usr}'"
     mycur.execute(bancheck_sql)
@@ -237,7 +238,7 @@ def bancheck(usr):
     else:
         return False
 def adminchck(usr):
-    mysqlcon = mysql.connector.connect(user="rvshop_2024",password="4BlAnC72&",host="usest1.netro.host",database="rvshop_2024dev",port="10086")
+    mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
     mycur = mysqlcon.cursor()
     admincheck_sql = f"SELECT isAdmin FROM users WHERE username = '{usr}'"
     mycur.execute(admincheck_sql)
@@ -250,7 +251,7 @@ def adminchck(usr):
     else:
         return 0
 def maintcheck():
-    mysqlcon = mysql.connector.connect(user="rvshop_2024",password="4BlAnC72&",host="usest1.netro.host",database="rvshop_2024dev",port="10086")
+    mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
     mycur = mysqlcon.cursor()
     maintcheck_sql = f"SELECT isup FROM WSCavailability"
     mycur.execute(maintcheck_sql)
@@ -260,7 +261,7 @@ def maintcheck():
     else:
         return False
 def news(newsid, title):
-    mysqlcon = mysql.connector.connect(user="rvshop_2024",password="4BlAnC72&",host="usest1.netro.host",database="rvshop_2024dev",port="10086")
+    mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
     mycur = mysqlcon.cursor()
     if title == True:
         select_sql = f"SELECT title FROM news WHERE id = '{str(newsid)}'"
@@ -275,7 +276,7 @@ def news(newsid, title):
         mysqlcon.close()
         return text
 def logind(usr, pwd):
-    mysqlcon = mysql.connector.connect(user="rvshop_2024",password="4BlAnC72&",host="usest1.netro.host",database="rvshop_2024dev",port="10086")
+    mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
     mycur = mysqlcon.cursor()
     getpwd = f"SELECT pass FROM users WHERE username = '{usr}'"
     mycur.execute(getpwd)
@@ -288,7 +289,7 @@ def logind(usr, pwd):
     else:
         return False
 def otpchek(usr):
-    mysqlcon = mysql.connector.connect(user="rvshop_2024",password="4BlAnC72&",host="usest1.netro.host",database="rvshop_2024dev",port="10086")
+    mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
     mycur = mysqlcon.cursor()
     getotp = f"SELECT hasOtp FROM users WHERE username = '{usr}'"
     mycur.execute(getotp)
@@ -1044,7 +1045,7 @@ def otpcode():
     elif request.method == "POST":
         usr = request.cookies.get("usr")
         otp = request.form["otp"]
-        mysqlcon = mysql.connector.connect(user="rvshop_2024",password="4BlAnC72&",host="usest1.netro.host",database="rvshop_2024dev",port="10086")
+        mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
         mycur = mysqlcon.cursor()
         getotp = f"SELECT otpSecret FROM users WHERE username = '{usr}'"
         mycur.execute(getotp)

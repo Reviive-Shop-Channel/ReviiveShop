@@ -1,0 +1,5 @@
+UsernameDB = ""
+UserPasswordDB = ""
+HostDB = ""
+DataBase = ""
+DBPort = ""
