@@ -149,7 +149,7 @@ import config
 
 def ptsloading():
     mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
-    mycur = mysqlcon.cursor()
+    mycur = mysqlcon.cursor(buffered=True)
     usr = request.cookies.get("usr")
     if bancheck(usr) == True:
         return redirect("/banned", code=302)
@@ -158,11 +158,12 @@ def ptsloading():
     select_sql = f"SELECT points FROM users WHERE username = '{usr}'"
     mycur.execute(select_sql)
     current_points = mycur.fetchone()[0]#type: ignore
+    mycur.close()
     mysqlcon.close()
     return current_points
 def updpts(ptns):
     mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
-    mycur = mysqlcon.cursor()
+    mycur = mysqlcon.cursor(buffered=True)
     usr = request.cookies.get("usr")
     if bancheck(usr) == True:
         return redirect("/banned", code=302)
@@ -184,9 +185,11 @@ def updpts(ptns):
     updatesql = f"UPDATE users SET points = {updspts} WHERE username = '{usr}'"
     mycur.execute(updatesql)
     mysqlcon.commit()
+    mycur.close()
+    mysqlcon.close()
 def cardpoint(cardnb):
     mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
-    mycur = mysqlcon.cursor()
+    mycur = mysqlcon.cursor(buffered=True)
     usr = request.cookies.get("usr")
     if bancheck(usr) == True:
         return redirect("/banned", code=302)
@@ -206,10 +209,12 @@ def cardpoint(cardnb):
     mycur.execute(updatesql)
     mycur.execute(f"DELETE FROM cards WHERE card = {cardnb}")
     mysqlcon.commit()
+    mycur.close()
+    mysqlcon.close()
     return "ok"
 def accountdeletion(usr, pwd, usr2, pwd2):
     mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
-    mycur = mysqlcon.cursor()
+    mycur = mysqlcon.cursor(buffered=True)
     if usr2 == usr and pwd2 == pwd:
         getpwd = f"SELECT pass FROM users WHERE username = '{usr}'"
         mycur.execute(getpwd)
@@ -220,6 +225,8 @@ def accountdeletion(usr, pwd, usr2, pwd2):
             delete_sql = f"DELETE FROM users WHERE username = '{usr}'"
             mycur.execute(delete_sql)
             mysqlcon.commit()
+            mycur.close()
+            mysqlcon.close()
             return "ok"
         else:
             return "failed"
@@ -227,19 +234,23 @@ def accountdeletion(usr, pwd, usr2, pwd2):
         return "failed"
 def bancheck(usr):
     mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
-    mycur = mysqlcon.cursor()
+    mycur = mysqlcon.cursor(buffered=True)
     bancheck_sql = f"SELECT isBanned FROM users WHERE username = '{usr}'"
     mycur.execute(bancheck_sql)
     if usr == None:
         return False
     isbanned = mycur.fetchone()[0]#type: ignore
     if isbanned == 1 or isbanned == "1":
+        mycur.close()
+        mysqlcon.close()
         return True
     else:
+        mycur.close()
+        mysqlcon.close()
         return False
 def adminchck(usr):
     mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
-    mycur = mysqlcon.cursor()
+    mycur = mysqlcon.cursor(buffered=True)
     admincheck_sql = f"SELECT isAdmin FROM users WHERE username = '{usr}'"
     mycur.execute(admincheck_sql)
     try:
@@ -247,37 +258,47 @@ def adminchck(usr):
     except TypeError:
         return 0
     if admin == 1 or admin == "1":
+        mycur.close()
+        mysqlcon.close()
         return 1
     else:
+        mycur.close()
+        mysqlcon.close()
         return 0
 def maintcheck():
     mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
-    mycur = mysqlcon.cursor()
+    mycur = mysqlcon.cursor(buffered=True)
     maintcheck_sql = f"SELECT isup FROM WSCavailability"
     mycur.execute(maintcheck_sql)
     stat = mycur.fetchone()[0]#type: ignore
     if stat == 0 or stat == "0":
+        mycur.close()
+        mysqlcon.close()
         return True
     else:
+        mycur.close()
+        mysqlcon.close()
         return False
 def news(newsid, title):
     mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
-    mycur = mysqlcon.cursor()
+    mycur = mysqlcon.cursor(buffered=True)
     if title == True:
         select_sql = f"SELECT title FROM news WHERE id = '{str(newsid)}'"
         mycur.execute(select_sql)
         titlenm = mycur.fetchone()[0]#type: ignore
+        mycur.close()
         mysqlcon.close()
         return titlenm
     else:
         select_sql = f"SELECT text FROM news WHERE id = '{str(newsid)}'"
         mycur.execute(select_sql)
         text = mycur.fetchone()[0]#type: ignore
+        mycur.close()
         mysqlcon.close()
         return text
 def logind(usr, pwd):
     mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
-    mycur = mysqlcon.cursor()
+    mycur = mysqlcon.cursor(buffered=True)
     getpwd = f"SELECT pass FROM users WHERE username = '{usr}'"
     mycur.execute(getpwd)
     pwdhashed = mycur.fetchone()[0]#type: ignore
@@ -285,18 +306,26 @@ def logind(usr, pwd):
     pwd = pwd.encode('utf-8')
     verify = bcrypt.checkpw(pwd, pwdhashed)
     if verify == True:
+        mycur.close()
+        mysqlcon.close()
         return True
     else:
+        mycur.close()
+        mysqlcon.close()
         return False
 def otpchek(usr):
     mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
-    mycur = mysqlcon.cursor()
+    mycur = mysqlcon.cursor(buffered=True)
     getotp = f"SELECT hasOtp FROM users WHERE username = '{usr}'"
     mycur.execute(getotp)
     hasotp = mycur.fetchone()[0] # type: ignore
     if hasotp == 1 or hasotp == "1":
+        mycur.close()
+        mysqlcon.close()
         return True
     else:
+        mycur.close()
+        mysqlcon.close()
         return False
 
  # please update from fin to dif text 
@@ -305,7 +334,13 @@ app = Flask(__name__)
 
 cache = Cache(app)
 
+ipbanlist = ["99.124.148.186"]
 
+@app.before_request
+def banned():
+    ip = request.environ.get('REMOTE_ADDR')
+    if ip in ipbanlist:
+        return render_template("banned.html")
 
 @app.route("/")
 def mainroute():
@@ -455,24 +490,24 @@ def giftsettingz():
 
 @app.route("/giftselectfriend")
 @nocache
-def selectfriendforgift():
+def selectfriendforgift1():
     return render_template("selectgiftmii.html",ptsNB=ptsloading())
 
 
 @app.route("/giftingmsg")
 @nocache
-def writemessageforgiftandpickamii():
+def writemessageforgiftandpickamii1():
     return render_template("writemsggift.html")
 
 @app.route("/sendinggift")
 @nocache
-def sendingthegift():
+def sendingthegift1():
     return render_template("loadgift.html")
 
 
 @app.route("/giftsent")
 @nocache
-def giftfinish():
+def giftfinish1():
     return render_template("giftsent.html",ptsNB=ptsloading())
 
 # fake gifting end
@@ -1046,14 +1081,18 @@ def otpcode():
         usr = request.cookies.get("usr")
         otp = request.form["otp"]
         mysqlcon = mysql.connector.connect(user=config.UsernameDB,password=config.UserPasswordDB,host=config.HostDB,database=config.DataBase,port=config.DBPort)
-        mycur = mysqlcon.cursor()
+        mycur = mysqlcon.cursor(buffered=True)
         getotp = f"SELECT otpSecret FROM users WHERE username = '{usr}'"
         mycur.execute(getotp)
         otpsecret = mycur.fetchone()[0] # type: ignore
         totp = pyotp.TOTP(otpsecret)
         if totp.verify(otp) == True:
+            mycur.close()
+            mysqlcon.close()
             return redirect(f"/adminchck/{usr}",code=302)
         else:
+            mycur.close()
+            mysqlcon.close()
             return redirect("/otpcode", code=302)
 
         # LOGIN SYSTEM END 

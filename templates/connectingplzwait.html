@@ -51,24 +51,23 @@ body {
 <script type="text/JavaScript">
   	snd.playSE(7);
     var shop = new wiiShop();
-            const unused = shop.connecting;
-            setTimeout(baDing, 500);
-            setTimeout(redirect, 4500);
-            function baDing() {
-                sound.playSE(7);
-            }
-            // CHANGE TO /maint if the shop is under maintenance, change to /indexx if the shop isn't under maintenance.
-            function redirect() {
-              setTimeout=(1000),
-              hideElement=("updatedbox"),
-              shop.beginWaiting();
-                // change /firstpage to /firstpageclassic for reviive shops birthday event on every Janurary 20th.
+    const unused = shop.connecting;
+    setTimeout(baDing, 500);
+    setTimeout(redirect, 4500);
+    function baDing() {
+      sound.playSE(7);
+    }
+    // CHANGE TO /maint if the shop is under maintenance, change to /indexx if the shop isn't under maintenance.
+    function redirect() {
+      setTimeout=(1000),
+      hideElement=("updatedbox"),
+      shop.beginWaiting();
+      // change /firstpage to /firstpageclassic for reviive shops birthday event on every Janurary 20th.
 
-                window.location.href = "/firstpage";
-                // change /firstpage to /firstpageclassic for reviive shops birthday event on every Janurary 20th.
-
-                 // CHANGE TO /maint if the shop is under maintenance, change to /indexx if the shop isn't under maintenance.
-            }
+      window.location.href = "/firstpage";
+      // change /firstpage to /firstpageclassic for reviive shops birthday event on every Janurary 20th.
+      // CHANGE TO /maint if the shop is under maintenance, change to /indexx if the shop isn't under maintenance.
+    }
 
 </script>
 <body onload="initPage()">
